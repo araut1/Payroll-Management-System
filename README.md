@@ -1,24 +1,24 @@
 The project has multiple classes and sub-classes with many features within them. Basic operations users can perform via this program project that are based on file handling are adding new employee record, modifying employee record and deleting record, displaying one or all employee’s record. Besides these, payroll management also allows users to print the salary slip for a particular employee. This project is large, complete and we tried our best to make it error-free. The source code is very long – over 1500 lines and developed in Code Blocks compiler.
 
 # It uses the concept of following c/c++ topics:
-Pointers
-Loops
-Functions
-If Else
-Switch
-Classes
-File handling
-C++ Graphics
-Function overriding and overloading
-composition
+- Pointers
+- Loops
+- Functions
+- If Else
+- Switch
+- Classes
+- File handling
+- C++ Graphics
+- Function overriding and overloading
+- Composition
 
 # The Project has 3 main classes and with many functions in menu
 1. LINES
-LINE_HOR
-LINE_VER
-BOX
-CLEARUP
-CLEARDOWN
+ * LINE_HOR
+ * LINE_VER
+ * BOX
+ * CLEARUP
+ * CLEARDOWN
 
 1. MENUS
 MAIN_MENU
@@ -56,6 +56,7 @@ Delete Employee Record:
   Deletion is done of an employee record from Payroll management system project by entering the employee code. A confirmation message is asked stating whether the user really wants to delete the record from the file.
 
 Print Employee Salary Slip:
+  
   This feature too asks for the employee code; the employee code has been used to unlock or perform operations in many features of this payroll management system project in C++. This function lists all the months of the year, and asks for date, employee name, designation and grade from the user. To print the salary slip, the user further needs to provide information such as number of days worked in the month by the employee and the number of hours worked over time. The slip enlists basic salary, allowance, deductions and net salary of the employee.
 
 Display Employee Record:
