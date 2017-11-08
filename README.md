@@ -1,8 +1,6 @@
-The project has multiple classes and sub-classes with many features within them.
- Basic operations users can perform via this program project that are based on file handling are adding new employee record, modifying employee record and deleting record, displaying one or all employee’s record.
-Besides these, payroll management also allows users to print the salary slip for a particular employee. This project is large, complete and we tried our best to make it error-free. The source code is very long – over 1500 lines and developed in Code Blocks compiler.
+The project has multiple classes and sub-classes with many features within them. Basic operations users can perform via this program project that are based on file handling are adding new employee record, modifying employee record and deleting record, displaying one or all employee’s record. Besides these, payroll management also allows users to print the salary slip for a particular employee. This project is large, complete and we tried our best to make it error-free. The source code is very long – over 1500 lines and developed in Code Blocks compiler.
 
-It uses the concept of following c/c++ topics:
+# It uses the concept of following c/c++ topics:
 Pointers
 Loops
 Functions
@@ -13,18 +11,21 @@ File handling
 C++ Graphics
 Function overriding and overloading
 composition
-The Project has 3 main classes and with many functions in menu
-LINES
+
+# The Project has 3 main classes and with many functions in menu
+1. LINES
 LINE_HOR
 LINE_VER
 BOX
 CLEARUP
 CLEARDOWN
-MENUS
+
+1. MENUS
 MAIN_MENU
 EDIT_MENU
 INTRODUCTION
-EMPLOYEE
+
+1. EMPLOYEE
 NEW_EMPLOYEE
 MODIFICATION
 DELETION
@@ -41,7 +42,7 @@ FOUND_CODE
 DISPLAY_RECORD
 VALID_DATE
 
-How Project Works
+# How Project Works
 Addition of New Employee:  
  This feature is under the public functions of class employee. The information handled in this feature are employee code number, name, address, phone number, joining date (day, month and year), designation, grade and loan.
 
