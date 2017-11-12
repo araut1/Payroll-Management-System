@@ -66,3 +66,7 @@ Display Employee Record:
 Display List of Employees:
 
   This feature displays the record of all employees added in file. The records are displayed in a tabular pattern containing information such as code name of the employee, phone number, date of joining, designation, grade and salary.
+
+# Contribute
+
+Please feel free to add your own code, fix bugs or improve the docs.
