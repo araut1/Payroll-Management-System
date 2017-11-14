@@ -223,9 +223,7 @@ void LINES::BOX(int column1, int row1, int column2, int row2, char c)
  LINE_VER(row1, row2, column2, l2);
 }
 
-/*
- THIS FUNCTION CLEAR THE SCREEN LINE BY LINE UPWARD
-*/
+//THIS FUNCTION CLEAR THE SCREEN LINE BY LINE UPWARD
 
 void LINES::CLEARUP(void)
 {
@@ -246,7 +244,6 @@ void LINES::CLEARDOWN(void)
   clreol();
  }
 }
-
 
  // THIS FUNCTION ADDS THE GIVEN DATA IN THE EMPLOYEE'S FILE
 
@@ -270,7 +267,6 @@ void EMPLOYEE::ADD_RECORD(int ecode, char ename[26], char eaddress[31], char eph
  file.write((char *) this, sizeof(EMPLOYEE));
  file.close();
 }
-
 
 /* THIS FUNCTION MODIFY THE GIVEN DATA IN THE
    EMPLOYEE'S FILE
@@ -297,7 +293,6 @@ void EMPLOYEE::MODIFY_RECORD(int ecode, char ename[26], char eaddress[31], char 
  file.write((char *) this, sizeof(EMPLOYEE));
  file.close();
 }
-
 
 /* THIS FUNCTION DELETE THE RECORD IN THE EMPLOYEE FILE
    FOR THE GIVEN EMPLOYEE CODE
@@ -336,7 +331,6 @@ void EMPLOYEE::DELETE_RECORD(int ecode)
 
 // THIS FUNCTION RETURNS THE LAST EMPLOYEE'S CODE
 
-
 int EMPLOYEE::LASTCODE(void)
 {
  fstream file;
@@ -349,10 +343,7 @@ int EMPLOYEE::LASTCODE(void)
  return count;
 }
 
-
-
 // THIS FUNCTION RETURNS 0 IF THE GIVEN CODE NOT FOUND
-
 
 int EMPLOYEE::FOUND_CODE(int ecode)
 {
@@ -372,10 +363,7 @@ int EMPLOYEE::FOUND_CODE(int ecode)
  return found;
 }
 
-
-
 // THIS FUNCTION RETURNS RECORD NO. OF THE GIVEN CODE
-
 
 int EMPLOYEE::RECORDNO(int ecode)
 {
@@ -393,10 +381,7 @@ int EMPLOYEE::RECORDNO(int ecode)
  return recno;
 }
 
-
-
 // THIS FUNCTION DISPLAYS THE LIST OF THE EMPLOYEES
-
 
 void EMPLOYEE::LIST(void)
 {
@@ -477,10 +462,7 @@ void EMPLOYEE::LIST(void)
  file.close();
 }
 
-
-
 // THIS FUNCTION DISPLAYS THE RECORD OF THE EMPLOYEES
-
 
 void EMPLOYEE::DISPLAY_RECORD(int ecode)
 {
@@ -531,10 +513,7 @@ void EMPLOYEE::DISPLAY_RECORD(int ecode)
  file.close();
 }
 
-
-
 // THIS FUNCTION GIVE DATA TO ADD IN THE FILE
-
 
 void EMPLOYEE::NEW_EMPLOYEE(void)
 {
