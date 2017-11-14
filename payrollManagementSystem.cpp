@@ -19,7 +19,6 @@ void gotoxy(int x, int y)
  SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), c);
 }
 
-
 class LINES
 {
 public:
@@ -30,8 +29,6 @@ public:
  void CLEARDOWN(void);
 };
 
-
-
 class MENU
 {
 public:
@@ -40,8 +37,6 @@ private:
  void EDIT_MENU(void);
  void INTRODUCTION(void);
 };
-
-
 
 class EMPLOYEE
 {
@@ -129,8 +124,6 @@ void MENU::MAIN_MENU(void)
  L.CLEARUP();
 }
 
-
-
 void MENU::EDIT_MENU(void)
 {
  char ch;
@@ -169,7 +162,6 @@ void MENU::EDIT_MENU(void)
  L.CLEARDOWN();
 }
 
-
 void LINES::LINE_HOR(int column1, int column2, int row, char c)
 {
  for (column1; column1 <= column2; column1++)
@@ -179,8 +171,6 @@ void LINES::LINE_HOR(int column1, int column2, int row, char c)
  }
 }
 
-
-
 void LINES::LINE_VER(int row1, int row2, int column, char c)
 {
  for (row1; row1 <= row2; row1++)
@@ -189,8 +179,6 @@ void LINES::LINE_VER(int row1, int row2, int column, char c)
   cout << c;
  }
 }
-
-
 
 void LINES::BOX(int column1, int row1, int column2, int row2, char c)
 {
@@ -235,7 +223,6 @@ void LINES::BOX(int column1, int row1, int column2, int row2, char c)
  LINE_VER(row1, row2, column2, l2);
 }
 
-
 /*
  THIS FUNCTION CLEAR THE SCREEN LINE BY LINE UPWARD
 */
@@ -250,8 +237,6 @@ void LINES::CLEARUP(void)
  }
 }
 
-
-
 void LINES::CLEARDOWN(void)
 {
  for (int i = 1; i <= 25; i++)
@@ -263,9 +248,7 @@ void LINES::CLEARDOWN(void)
 }
 
 
-/*
- THIS FUNCTION ADDS THE GIVEN DATA IN THE EMPLOYEE'S FILE
-*/
+ // THIS FUNCTION ADDS THE GIVEN DATA IN THE EMPLOYEE'S FILE
 
 void EMPLOYEE::ADD_RECORD(int ecode, char ename[26], char eaddress[31], char ephone[10], int d, int m, int y, char edesig[16], char egrade, char ehouse, char econv, float eloan, float ebasic)
 {
