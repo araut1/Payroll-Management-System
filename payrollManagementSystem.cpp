@@ -818,10 +818,7 @@ void EMPLOYEE::NEW_EMPLOYEE(void)
  ADD_RECORD(ecode, ename, eaddress, ephone, d, m, y, edesig, egrade, ehouse, econv, eloan, ebasic);
 }
 
-
-
 // THIS FUNCTION GIVE CODE FOR THE DISPLAY OF THE RECORD
-
 
 void EMPLOYEE::DISPLAY(void)
 {
@@ -850,7 +847,6 @@ void EMPLOYEE::DISPLAY(void)
  cout << "Press any key to continue...";
  getch();
 }
-
 
 /* THIS FUNCTION GIVE DATA FOR THE MODIFICATION OF THE
    EMPLOYEE RECORD
@@ -1178,10 +1174,8 @@ void EMPLOYEE::MODIFICATION(void)
  getch();
 }
 
-
 /* THIS FUNCTION GIVE CODE NO. FOR THE DELETION OF THE
    EMPLOYEE RECORD */
-
 
 void EMPLOYEE::DELETION(void)
 {
@@ -1248,8 +1242,6 @@ int EMPLOYEE::VALID_DATE(int d1, int m1, int y1)
   valid = 0;
  return valid;
 }
-
-
 
 // THIS FUNCTION PRINTS THE SALARY SLIP FOR THE EMPLOYEE
 
@@ -1445,8 +1437,6 @@ void EMPLOYEE::SALARY_SLIP(void)
  gotoxy(2, 1);
  getch();
 }
-
-
 
 // MAIN FUNCTION CALLING MAIN MENU
 
