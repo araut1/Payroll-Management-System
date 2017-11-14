@@ -9,7 +9,6 @@
 #include <conio.h>
 #include <time.h>
 #include <unistd.h>
-
 #include <dos.h>
 
 using namespace std;
@@ -69,8 +68,6 @@ private:
  char  grade, house, convense;
  float loan, basic;
 };
-
-
 
 void MENU::MAIN_MENU(void)
 {
