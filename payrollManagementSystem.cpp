@@ -19,6 +19,7 @@ void gotoxy(int x, int y)
  SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), c);
 }
 
+// Class for handling lines and boxes in the console
 class LINES
 {
 public:
@@ -29,6 +30,7 @@ public:
  void CLEARDOWN(void);
 };
 
+// Class for handling different menus and user interactions
 class MENU
 {
 public:
@@ -38,6 +40,7 @@ private:
  void INTRODUCTION(void);
 };
 
+// Class representing employee data and operations
 class EMPLOYEE
 {
 public:
@@ -64,6 +67,7 @@ private:
  float loan, basic;
 };
 
+// Function to display the main menu
 void MENU::MAIN_MENU(void)
 {
  char ch;
@@ -124,6 +128,7 @@ void MENU::MAIN_MENU(void)
  L.CLEARUP();
 }
 
+// Function to display the edit menu
 void MENU::EDIT_MENU(void)
 {
  char ch;
@@ -514,6 +519,7 @@ void EMPLOYEE::DISPLAY_RECORD(int ecode)
 }
 
 // THIS FUNCTION GIVE DATA TO ADD IN THE FILE
+// FUNCTION TO INITIALIZE AN EMPLOYEE OBJECT AND TAKE USER INPUT FOR ADDING A NEW EMPLOYEE
 
 void EMPLOYEE::NEW_EMPLOYEE(void)
 {
